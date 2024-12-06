@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  header{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .logotip{
+    height: 50px;
+
+  }
+
+  button{
+    height: 40px;
+    width: 110px;
+    margin: 7px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 136, 136);
+    border-radius: 5%;
+    border: 0px;
+    font-size: 80%;
+  }
+
+  button:focus {
+    background-color: rgb(234, 49, 49);
+  }
+  
+  main{
+    flex-grow: 1;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+  }
+
+  .one{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.one::before {
+    content: "";
+    background-image: url("./wallpaper/1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.text{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.pic{
+  height: 250px;
+}
+
+.container {
+  max-width: 1200px; /* Ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 20px; /* Отступы */
+}
+
+.row {
+  display: flex;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  margin-bottom: 20px; /* Отступ между рядами */
+}
+
+.pic {
+  max-width: 300px; /* Максимальная ширина для изображений */
+  margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.text-column {
+  flex: 1; /* Разрешает текстовому блоку занимать оставшееся пространство */
+}
+
+
+.two{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.two::before {
+    content: "";
+    background-image: url("./wallpaper/2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.three{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.three::before {
+    content: "";
+    background-image: url("./wallpaper/3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.four{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.four::before {
+    content: "";
+    background-image: url("./wallpaper/4.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.five{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.five::before {
+    content: "";
+    background-image: url("./wallpaper/5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.output{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin: 30px auto;
+  border: 2px solid rgb(98, 3, 3);
+  max-width: 400px;
+  width: 100%; 
+}
+
+.output1{
+  font-size: 19px;
+}
+
+.output2{
+  font-size: 19px;
+}
+
+.link{
+  color: rgb(234, 49, 49);
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.link:hover{
+  color: rgb(91, 16, 16);
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+  .title{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .no{
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    background-color: rgb(234, 49, 49);
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+}
+
+.foot{
+    margin: 7px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.network{
+    height: 30px;
+}
+  
