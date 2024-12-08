@@ -12,20 +12,20 @@
 
         <h1>Авторизация</h1>
     
-        <form name="login">
+        <form name="login" novalidate>
             <div class="register">
-                <label for="fio">Введите логин</label>
-                <input type="text" id="fio" name="fio" pattern="[А-ЯЁ][а-яё]*" required />
-                <div id="out1"></div>
-                <div id="output1"></div>
+                <label for="fio" class="text">Введите логин</label>
+                <input type="text" id="fio" name="fio" class="inp" pattern="[А-ЯЁ][а-яё]*" required />
+                <div id="out1" class="text"></div>
+                <div id="output1"  class="no"></div>
     
-                <label for="date">Введите вашу дату рождения</label>
-                <input type="date" id="date" name="date" min="1950" max="2024-12-02"  required />
-                <div id="out2"></div>
-                <div id="output2"></div>
+                <label for="date" class="text">Введите вашу дату рождения</label>
+                <input type="date" id="date" name="date" class="inp" min="1950" max="2024-12-02"  required />
+                <div id="out2" class="text"></div>
+                <div id="output2" class="no"></div>
     
             <button type="submit">Отправить</button>
-            <div id="out3"></div>
+            <div id="out3"  class="no"></div>
             </div>
         </form>
     
@@ -34,4 +34,5 @@
     <script src="./script/for_login.js"></script>
     
 </body>
+
 </html>

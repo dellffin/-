@@ -8,7 +8,17 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: 0; /* Скрыть полосу прокрутки для WebKit-браузеров */
+}
+
+::-ms-scrollbar {
+    width: 0; /* Скрыть полосу прокрутки для Edge и IE */
+}
   
   header{
     background-color: rgb(255, 255, 255);
@@ -67,6 +77,10 @@
     bottom: 0;
     opacity: 0.3; 
     z-index: 0;
+}
+
+h1{
+  color: rgb(126, 21, 21);
 }
 
 .text{
@@ -188,8 +202,9 @@
   text-align: center;
   margin: 30px auto;
   border: 2px solid rgb(98, 3, 3);
-  max-width: 400px;
+  max-width: 380px;
   width: 100%; 
+  padding: 40px 0;
 }
 
 .output1{

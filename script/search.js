@@ -25,18 +25,3 @@ vvod.addEventListener('input', () => {
         }
     })
 })
-
-const vvod1 = document.getElementById('vvod1')
-
-function create(){
-    if(vvod1.value!=""){
-        items.push(vvod1.value)
-        displayAllItems();
-        vvod1.value = ""
-    }else{
-        document.getElementById("output").innerText = "Вы ничего не ввели"
-    }
-}
-
-const btn = document.getElementById("btn")
-btn.addEventListener("click", create)
