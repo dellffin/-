@@ -35,7 +35,7 @@
 
   .logotip{
     height: 50px;
-
+    width: auto;
   }
 
   button{
@@ -133,6 +133,110 @@ h1{
     bottom: 0;
     opacity: 0.3; 
     z-index: 0;
+}
+
+:root{
+  --el: 0;
+}
+
+.def{
+  justify-content: center;
+  opacity: 0;
+  display: none;
+  transition: 1s;
+  transform: translateX(var(--el));
+}
+
+/*характеристика изображения*/
+img{
+  width: 500px;
+  height: 620px;
+}
+
+/*при видимости изображения применяем эти свойства*/
+.show{
+  display: flex;
+}
+
+/*при скрытии изображения применяем эти свойства*/
+.close{
+  opacity: 1;
+}
+
+/*фиксирование кнопки*/
+.container0{
+  position: relative;
+
+}
+
+/*характеристики кнопки*/
+.butn{
+  position: fixed;
+  top: 650px;
+  left: 770px;
+  width: 70px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+/*фиксирование кнопки*/
+.container1{
+  position: relative;
+
+}
+
+/*характеристики кнопки*/
+.butn1{
+  position: fixed;
+  top: 650px;
+  left: 670px;
+  width: 70px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+/*фиксирование поля ввода*/
+.inn{
+  position: relative;
+}
+
+/*свойства поля ввода*/
+.in{
+  position: fixed;
+  top: 690px;
+  left: 50px;
+  width: 90px;
+  height: 25px;
+}
+
+/*фиксирование кнопки*/
+.container2{
+  position: relative;
+}
+
+/*характеристики кнопки*/
+.butn2{
+  position: fixed;
+  top: 690px;
+  left: 170px;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(73, 17, 17);
+}
+
+.cont3{
+  position: relative;
+}
+
+.out{
+  position: fixed;
+  top: 690px;
+  left: 250px;
+  width: 120px;
+  height: 35px;
+  border: 1px solid black;
 }
 
 .three{
@@ -259,6 +363,7 @@ h1{
 }
 
 .network{
-    height: 30px;
+  height: 30px;
+  width: auto;
 }
   
