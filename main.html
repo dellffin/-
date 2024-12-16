@@ -64,43 +64,165 @@
             <div class="content">
                 <h1 class="title">Галерея</h1>
 
-                 <!--изображения-->
-    <div class="def show close"><img src="./style/img/1img.jpg" alt=""></div>
-    <div class="def"><img src="./style/img/2img.jpg" alt=""></div>
-    <div class="def"><img src="./style/img/3img.jpg" alt=""></div>
-    <div class="def"><img src="./style/img/4img.jpg" alt=""></div>
-    <div class="def"><img src="./style/img/5img.jpg" alt=""></div>
+                <div class="def show close"><img class="img_slider" src="./style/img/1img.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/2img.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/3img.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/4img.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/5img.jpg" alt=""></div>
 
-    <!--кнопка для перелистывания вправо-->
-    <div class="container0">
-        <button id="btn" class="butn">></button>
-    </div>
+                <div class="container0">
+                    <button id="btn" class="butn">></button>
+                </div>
 
-    <!--кнопка для перелистывания влево-->
-    <div class="container1"></div>
-        <button id="btn1" class="butn1"><</button>
-    </div>
+                <div class="container1">
+                    <button id="btn1" class="butn1"><</button>
+                </div>
 
-    <!--поле ввода-->
-    <div class="inn"></div>
-        <input class="in" type="text" id="input">
-    </div>
-
-    <!--вывод сообщений-->
-    <div class="cont3">
-    <div class="out" id="output"></div>
-    </div>
-
-    <!--кнопка для показа изображения по выбранному номеру-->
-    <div class="container2">
-        <button class="butn2" id="btn2"></button>
-    </div>
             </div>
         </div>
 
         <div class="page four no">
             <div class="content">
-                <h1 class="title">Тест</h1>
+                <h1 class="title">Какой вы вид алкоголя?</h1>
+
+                <div class="bod">
+                    <form name="test" novalidate> 
+                
+                        <div class="inpuut">
+                            <label for="quest1">Вы сейчас пьяны? (Ответ с большой буквы)</label>
+                            <input type="text" id="quest1" pattern="Нет" required>
+                        </div>
+                
+                        <div  class="inpuut">
+                            <div>На чем вы не готовы экономить?</div>
+                
+                            <input type="radio" name="r_two" id="1.1" value="3" checked="checked">
+                            <label for="1.1">На еде</label><br>
+                            
+                            <input type="radio" name="r_two" id="1.2" value="2">
+                            <label for="1.2">На здоровье</label><br>
+                
+                            <input type="radio" name="r_two" id="1.3" value="1">
+                            <label for="1.3">На одежде</label><br>
+                
+                            <input type="radio" name="r_two" id="1.4" value="4">
+                            <label for="1.4">На технике</label><br>
+                
+                            <input type="radio" name="r_two" id="1.5" value="0">
+                            <label for="1.5">Могу экономить на всем</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Как предпочитаете проводить выходные?</div>
+                
+                            <input type="radio" name="r_three" id="2.1" value="3" checked="checked">
+                            <label for="2.1">В ночном клубе</label><br>
+                            
+                            <input type="radio" name="r_three" id="2.2" value="0">
+                            <label for="2.2">Дома перед телевизором</label><br>
+                
+                            <input type="radio" name="r_three" id="2.3" value="1">
+                            <label for="2.3">За чтением книг</label><br>
+                
+                            <input type="radio" name="r_three" id="2.4" value="2">
+                            <label for="2.4">У меня нет выходных</label><br>
+                
+                            <input type="radio" name="r_three" id="2.5" value="4">
+                            <label for="2.5">Занимаясь любимым хобби</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Какая профессия ближе вам?</div>
+                
+                            <input type="radio" name="r_four" id="3.1" value="0" checked="checked">
+                            <label for="3.1">Никакая, не хочу работать</label><br>
+                
+                            <input type="radio" name="r_four" id="3.2" value="1">
+                            <label for="3.2">Фотограф</label><br>
+                            
+                            <input type="radio" name="r_four" id="3.3" value="2">
+                            <label for="3.3">Бизнесмен</label><br>
+                
+                            <input type="radio" name="r_four" id="3.4" value="3">
+                            <label for="3.4">Любая, в которой могу общаться с людьми</label><br>
+                
+                            <input type="radio" name="r_four" id="3.5" value="4">
+                            <label for="3.5">Инженер</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Что из следующего лучше всего вас характерезует?</div>
+                
+                            <input type="radio" name="r_five" id="5.1" value="3" checked="checked">
+                            <label for="5.1">Добрый</label><br>
+                
+                            <input type="radio" name="r_five" id="5.2" value="1">
+                            <label for="5.2">Мечтательный</label><br>
+                            
+                            <input type="radio" name="r_five" id="5.3" value="0">
+                            <label for="5.3">Пофигист</label><br>
+                
+                            <input type="radio" name="r_five" id="5.4" value="2">
+                            <label for="5.4">Целеустремленный</label><br>
+                
+                            <input type="radio" name="r_five" id="5.5" value="4">
+                            <label for="5.5">Креативный</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Какой жанр музыки вам нравится больше всего?</div>
+                
+                            <input type="radio" name="r_six" id="6.1" value="1" checked="checked">
+                            <label for="6.1">Джаз</label><br>
+                
+                            <input type="radio" name="r_six" id="6.2" value="3">
+                            <label for="6.2">Поп</label><br>
+                            
+                            <input type="radio" name="r_six" id="6.3" value="4">
+                            <label for="6.3">Классическая музыка</label><br>
+                
+                            <input type="radio" name="r_six" id="6.4" value="0">
+                            <label for="6.4">Шансон</label><br>
+                
+                            <input type="radio" name="r_six" id="6.5" value="2">
+                            <label for="6.5">Рок</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Как часто вы пьете алкоголь?</div>
+                            
+                            <input type="radio" name="r_seven" id="7.1" value="0" checked="checked">
+                            <label for="7.1">Почти каждый день</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.2" value="1">
+                            <label for="7.2">По выходным</label><br>
+                            
+                            <input type="radio" name="r_seven" id="7.3" value="2">
+                            <label for="7.3">По праздникам</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.4" value="3">
+                            <label for="7.4">Пару раз в месяц</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.5" value="4">
+                            <label for="7.5">Не слежу за этим</label><br>
+                        </div>
+                
+                        <div class="inpuut">
+                            <label for="quest8">Вы счастливы?</label>
+                            <input type="text" id="quest8" pattern="[Дд]а" required>
+                        </div>
+                
+                        <div class="submit"> 
+                            <input type="submit" value="Узнать результат" class="sub">
+                        </div>
+
+                        <div class="out33">
+                            <div class="output33" id="output33"></div>
+                        </div>
+                
+                    </form>
+                    </div>
+
             </div>
         </div>
 
@@ -110,6 +232,7 @@
                 <div class="output">
                     <div class="output1" id="output1"></div>
                     <div class="output2" id="output2"></div>
+                    <div class="output3" id="output3"></div>
                     <a class="link" href="index.html">Выйти</a>
                 </div>
             </div>
@@ -131,6 +254,7 @@
     <script src="./script/for_authorization.js"></script>
     <script src="./script/search.js"></script>
     <script src="./script/slider.js"></script>
+    <script src="./script/test.js"></script>
     
 </body>
 </html>
