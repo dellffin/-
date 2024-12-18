@@ -79,3 +79,16 @@ button{
   border-radius: 8%;
   font-size: 15px;
 }
+
+.radio{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  color: rgb(126, 21, 21);
+}
+
+input[type="radio"] {
+  transform: scale(1.6);
+  accent-color: rgb(80, 10, 10);
+}

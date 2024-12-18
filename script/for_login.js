@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.forms.login;
-    
+
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -20,10 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("output2").innerText = "Дата рождения: " + document.getElementById("date").value;
         }
 
+        let genderValue;
+
+        if (form.elements.r__.value == "Мужской"){
+            document.getElementById("output4").innerText = "Пол: Мужской";
+            genderValue = "Мужской";
+        } else if (form.elements.r__.value == "Женский") {
+            document.getElementById("output4").innerText = "Пол: Женский";
+            genderValue = "Женский";
+        } else if (form.elements.r__.value == "Ламинат"){
+            document.getElementById("output4").innerText = "Пол: Ламинат";
+            genderValue = "Ламинат";
+        }
+
+        document.getElementById('output4').innerText = 'Пол: ' + genderValue;
+
         if (x) {
             localStorage.setItem("fio", document.getElementById("fio").value);
             localStorage.setItem("date", document.getElementById("date").value);
-            document.location.href = " ./main.html"; // Переход к другой странице
+            localStorage.setItem('r__', genderValue); 
+            document.location.href = " ./main.html";
         }
     });
 });
