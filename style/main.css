@@ -133,6 +133,68 @@ h1{
     z-index: 0;
 }
 
+#vyvod {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  flex-grow: 1;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item.expanded {
+  height: auto; /* Увеличение высоты карточки */
+}
+
+.description {
+  display: none;
+  padding: 10px;
+  background-color: rgba(126, 21, 21, 0.19);
+  margin-top: 10p
+}
+
+.item.expanded .description {
+  display: block;
+}
+
+.field{
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.card{
+  margin: 10px;
+  background-color: rgba(126, 21, 21, 0.19);
+  width: 280px;
+}
+
+.three{
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.three::before {
+    content: "";
+    background-image: url("./wallpaper/3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
 :root{
   --el: 0;
 }
@@ -158,44 +220,33 @@ h1{
   opacity: 1;
 }
 
-.butn{
-  position: absolute;
-  top: 500px;
-  left: 770px;
+.container-buttons {
+  text-align: center; /* Центрирование кнопок горизонтально */
+  margin-top: 20px;   /* Отступ сверху для отделения от слайдера */
+}
+
+.butn {
   width: 70px;
   height: 30px;
   background-color: black;
   color: white;
+  cursor: pointer; /* Указатель мыши в виде руки при наведении */
 }
 
-.butn1{
-  position: absolute;
-  top: 500px;
-  left: 670px;
+.butn1 {
+  margin-right: 20px; /* Отступ между кнопками */
   width: 70px;
   height: 30px;
   background-color: black;
   color: white;
+  cursor: pointer; /* Указатель мыши в виде руки при наведении */
 }
 
-.three{
-    position: relative; 
-    height: 100vh;
-    overflow: hidden; 
-}
-
-.three::before {
-    content: "";
-    background-image: url("./wallpaper/3.jpg");
-    background-size: cover;
-    background-position: center;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.3; 
-    z-index: 0;
+.slide-number {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
 }
 
 .four{

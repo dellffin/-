@@ -1,15 +1,24 @@
 let reg = /[0-9]/g;
 
-//функция для перемотки изображений вправо и их поочередного отображения
+// Функция для обновления текста в подписи
+function updateSlideNumber() {
+    const slideNumberEl = document.querySelector('.slide-number');
+    slideNumberEl.textContent = currentSlideIndex + ' мем ' + ' из ' + slideCount
+}
+
+// Функция для перемотки изображений вправо и их поочередного отображения
 function fun() {
-    hide(spisok[x - 1].classList)
-    if (x < spisok.length) {
-        x += 1
+    hide(spisok[currentSlideIndex - 1].classList);
+    
+    if (currentSlideIndex < slideCount) {
+        currentSlideIndex++;
     } else {
-        x = 1
-    }  
-    setTimeout(()=>{
-        show(spisok[x - 1].classList)
+        currentSlideIndex = 1;
+    }
+    
+    setTimeout(() => {
+        show(spisok[currentSlideIndex - 1].classList);
+        updateSlideNumber(); // Обновить подпись
     }, 1000);
 }
 
@@ -37,16 +46,19 @@ function hide(clasL){
      
 }
 
-//функция для перемотки изображений влево и их поочередного отображения
+// Функция для перемотки изображений влево и их поочередного отображения
 function fun1() {
-    hide1(spisok[x - 1].classList)
-    if (x > 1) {
-        x -= 1
+    hide1(spisok[currentSlideIndex - 1].classList);
+    
+    if (currentSlideIndex > 1) {
+        currentSlideIndex--;
     } else {
-        x = spisok.length
-    }  
-    setTimeout(()=>{
-        show1(spisok[x - 1].classList)
+        currentSlideIndex = slideCount;
+    }
+    
+    setTimeout(() => {
+        show1(spisok[currentSlideIndex - 1].classList);
+        updateSlideNumber(); // Обновить подпись
     }, 1000);
 }
 
@@ -78,7 +90,11 @@ let x = 1
 
 //создание массива из изображений
 const spisok = document.getElementsByClassName('def')
+let slideCount = spisok.length; // Количество слайдов
+let currentSlideIndex = 1;      // Индекс текущего слайда
 
+// Вызываем обновление подписи сразу после загрузки страницы
+updateSlideNumber();
 
 const btn = document.getElementById("btn")
 btn.addEventListener("click", fun) 

@@ -53,10 +53,8 @@
             <div class="content">
                 <h1 class="title">Словарь</h1>
 
-                <input type="text" id="vvod">
-                <ul id="vyvod">
-
-                </ul>
+                <input type="text" id="vvod" placeholder="Поиск..." class="field">
+                <div id="vyvod" class="card"></div>
             </div>
         </div>
 
@@ -70,13 +68,12 @@
                 <div class="def"><img class="img_slider" src="./style/img/4img.jpg" alt=""></div>
                 <div class="def"><img class="img_slider" src="./style/img/5img.jpg" alt=""></div>
 
-                <div class="container0">
+                <div class="container-buttons">
+                    <button id="btn1" class="butn1"><</button>
                     <button id="btn" class="butn">></button>
                 </div>
 
-                <div class="container1">
-                    <button id="btn1" class="butn1"><</button>
-                </div>
+                <span class="slide-number">1 / 5</span>
 
             </div>
         </div>
@@ -256,6 +253,7 @@
     <script src="./script/search.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/test.js"></script>
+    <script src="./script/search_field.js"></script>
     
 </body>
 </html>
