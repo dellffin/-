@@ -54,7 +54,9 @@
                 <h1 class="title">Словарь</h1>
 
                 <input type="text" id="vvod" placeholder="Поиск..." class="field">
-                <div id="vyvod" class="card"></div>
+                <div class="cont_card">
+                    <div id="vyvod" class="card"></div>
+                </div>
             </div>
         </div>
 
@@ -88,6 +90,8 @@
                         <div class="inpuut">
                             <label for="quest1">Вы сейчас пьяны? (Ответ с большой буквы)</label>
                             <input type="text" id="quest1" pattern="Нет" required>
+
+                            <div class="output_er" id="er_8"></div>
                         </div>
                 
                         <div  class="inpuut">
@@ -107,6 +111,8 @@
                 
                             <input type="radio" name="r_two" id="1.5" value="0">
                             <label for="1.5">Могу экономить на всем</label><br>
+
+                            <div class="output_er" id="er_1"></div>
                         </div>
                 
                         <div class="inpuut">
@@ -126,6 +132,8 @@
                 
                             <input type="radio" name="r_three" id="2.5" value="4">
                             <label for="2.5">Занимаясь любимым хобби</label><br>
+
+                            <div class="output_er" id="er_2"></div>
                         </div>
                 
                         <div class="inpuut">
@@ -145,6 +153,8 @@
                 
                             <input type="radio" name="r_four" id="3.5" value="4">
                             <label for="3.5">Инженер</label><br>
+
+                            <div class="output_er" id="er_3"></div>
                         </div>
                 
                         <div class="inpuut">
@@ -164,6 +174,8 @@
                 
                             <input type="radio" name="r_five" id="5.5" value="4">
                             <label for="5.5">Креативный</label><br>
+
+                            <div class="output_er" id="er_4"></div>
                         </div>
                 
                         <div class="inpuut">
@@ -183,6 +195,8 @@
                 
                             <input type="radio" name="r_six" id="6.5" value="2">
                             <label for="6.5">Рок</label><br>
+
+                            <div class="output_er" id="er_5"></div>
                         </div>
                 
                         <div class="inpuut">
@@ -202,16 +216,21 @@
                 
                             <input type="radio" name="r_seven" id="7.5" value="4">
                             <label for="7.5">Не слежу за этим</label><br>
+
+                            <div class="output_er" id="er_6"></div>
                         </div>
                 
                         <div class="inpuut">
                             <label for="quest8">Вы счастливы?</label>
                             <input type="text" id="quest8" pattern="[Дд]а" required>
+
+                            <div class="output_er" id="er_7"></div>
                         </div>
                 
                         <div class="submit"> 
                             <input type="submit" value="Узнать результат" class="sub">
                         </div>
+                        
 
                         <div class="out33">
                             <div class="output33" id="output33"></div>

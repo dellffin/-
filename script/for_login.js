@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let genderValue;
 
-        if (form.elements.r__.value == "Мужской"){
+        if (form.elements.r__.value === "") {
+            document.getElementById("out4").innerText = "Вы не определились.";
+            x = false
+        } else if (form.elements.r__.value == "Мужской"){
             document.getElementById("output4").innerText = "Пол: Мужской";
             genderValue = "Мужской";
         } else if (form.elements.r__.value == "Женский") {
@@ -43,3 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
