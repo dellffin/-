@@ -16,6 +16,7 @@
         <button id="b3">Галерея</button>
         <button id="b4">Тест</button>
         <button id="b5">Личный кабинет</button>
+        <a class="exit" href="index.html">Выйти</a>
         <img src="./style/lit_pic/log2.jpg" alt="logotip" class="logotip">
         <img src="./style/lit_pic/log1.jpg" alt="logotip" class="logotip">
     </header>
@@ -109,7 +110,7 @@
                             <input type="radio" name="r_two" id="1.4" value="4">
                             <label for="1.4">На технике</label><br>
                 
-                            <input type="radio" name="r_two" id="1.5" value="0">
+                            <input type="radio" name="r_two" id="1.5" value="0.5">
                             <label for="1.5">Могу экономить на всем</label><br>
 
                             <div class="output_er" id="er_1"></div>
@@ -121,7 +122,7 @@
                             <input type="radio" name="r_three" id="2.1" value="3">
                             <label for="2.1">В ночном клубе</label><br>
                             
-                            <input type="radio" name="r_three" id="2.2" value="0">
+                            <input type="radio" name="r_three" id="2.2" value="0.5">
                             <label for="2.2">Дома перед телевизором</label><br>
                 
                             <input type="radio" name="r_three" id="2.3" value="1">
@@ -139,7 +140,7 @@
                         <div class="inpuut">
                             <div>Какая профессия ближе вам?</div>
                 
-                            <input type="radio" name="r_four" id="3.1" value="0">
+                            <input type="radio" name="r_four" id="3.1" value="0.5">
                             <label for="3.1">Никакая, не хочу работать</label><br>
                 
                             <input type="radio" name="r_four" id="3.2" value="1">
@@ -166,7 +167,7 @@
                             <input type="radio" name="r_five" id="5.2" value="1">
                             <label for="5.2">Мечтательный</label><br>
                             
-                            <input type="radio" name="r_five" id="5.3" value="0">
+                            <input type="radio" name="r_five" id="5.3" value="0.5">
                             <label for="5.3">Пофигист</label><br>
                 
                             <input type="radio" name="r_five" id="5.4" value="2">
@@ -190,7 +191,7 @@
                             <input type="radio" name="r_six" id="6.3" value="4">
                             <label for="6.3">Классическая музыка</label><br>
                 
-                            <input type="radio" name="r_six" id="6.4" value="0">
+                            <input type="radio" name="r_six" id="6.4" value="0.5">
                             <label for="6.4">Шансон</label><br>
                 
                             <input type="radio" name="r_six" id="6.5" value="2">
@@ -202,7 +203,7 @@
                         <div class="inpuut">
                             <div>Как часто вы пьете алкоголь?</div>
                             
-                            <input type="radio" name="r_seven" id="7.1" value="0">
+                            <input type="radio" name="r_seven" id="7.1" value="0.5">
                             <label for="7.1">Почти каждый день</label><br>
                 
                             <input type="radio" name="r_seven" id="7.2" value="1">
@@ -234,6 +235,18 @@
 
                         <div class="out33">
                             <div class="output33" id="output33"></div>
+                        </div>
+
+                        <div class="descriptionn">
+                            <div class="descript" id="descriptionn"></div>
+                        </div>
+
+                        <div class="descriptionn">
+                            <div class="descript" id="descript_img"></div>
+                        </div>
+                        
+                        <div class="cont_again">
+                            <button type="button" class="again" onclick="resetTest()">Пройти заново</button>
                         </div>
                 
                     </form>
