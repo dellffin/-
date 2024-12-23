@@ -1,22 +1,16 @@
 const form = document.forms.test;
 
-    // Функция для сброса формы и очистки результатов
-function resetTest() {
-        // Сбрасываем форму
+function agaiin(){
     form.reset();
-        
-        // Очищаем все сообщения об ошибках
     for (let i = 1; i <= 8; i++) {
         document.getElementById(`er_${i}`).innerText = '';
     }
-        
-        // Удаляем все дочерние элементы div#results
-    while (resultsDiv.firstChild) {
-        resultsDiv.removeChild(resultsDiv.firstChild);
+    document.getElementById("output33").innerText = "";
+    document.getElementById("descriptionn").innerText = "";
+    var descriptImg = document.getElementById("descript_img");
+    if (descriptImg) {
+        descriptImg.innerHTML = "";
     }
-        
-        // Скрываем блок с результатами
-    resultsDiv.style.display = 'none';
 }
 
 form.addEventListener('submit', (event) => {
@@ -129,3 +123,6 @@ form.addEventListener('submit', (event) => {
     document.getElementById("output33").innerText = "Вы  " + y;
     document.getElementById("output3").innerText = "Последний результат теста: " + y;
 });
+
+const btn_a = document.getElementById("again")
+btn_a.addEventListener("click", agaiin)
