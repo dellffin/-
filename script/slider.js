@@ -12,9 +12,7 @@ function fun() {
     
     if (currentSlideIndex < slideCount) {
         currentSlideIndex++;
-    } else {
-        currentSlideIndex = 1;
-    }
+    } 
     
     setTimeout(() => {
         show(spisok[currentSlideIndex - 1].classList);
@@ -52,9 +50,7 @@ function fun1() {
     
     if (currentSlideIndex > 1) {
         currentSlideIndex--;
-    } else {
-        currentSlideIndex = slideCount;
-    }
+    } 
     
     setTimeout(() => {
         show1(spisok[currentSlideIndex - 1].classList);

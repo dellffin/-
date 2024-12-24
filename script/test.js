@@ -16,6 +16,11 @@ function agaiin(){
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    var descriptImg = document.getElementById("descript_img");
+    if (descriptImg) {
+        descriptImg.innerHTML = "";
+    }
+
     var y = 0;
 
     let inputValue = form.elements.quest1.value.trim();
